@@ -1,0 +1,5 @@
+# Security contact for posouzeni.cz
+Contact: mailto:info@posouzeni.cz
+Preferred-Languages: cs, en
+Canonical: https://posouzeni.cz/.well-known/security.txt
+Expires: 2026-12-31T23:59:59.000Z

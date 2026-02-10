@@ -1,0 +1,11 @@
+# ai.txt – AI Training Opt-Out
+# https://posouzeni.cz/ai.txt
+#
+# This file communicates our preferences regarding AI training data usage.
+
+User-Agent: *
+Disallow-Training: Yes
+
+# We do not consent to our content being used for AI model training.
+# Our content may be used for search indexing and retrieval purposes only.
+# For questions, contact: info@posouzeni.cz
