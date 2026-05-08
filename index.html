@@ -353,10 +353,13 @@
         </div>
         <div class="hero__image animate-on-scroll" style="--delay: 200ms">
           <picture>
-            <!-- WebP variants (vytvořte z PNG: cwebp -q 75 input.png -o output.webp) -->
-            <source media="(max-width: 768px)" type="image/webp" srcset="posouzeni_mobil.webp">
-            <source type="image/webp" srcset="posouzeni_desktop.webp">
-            <!-- PNG fallbacky (zatím s aktuálními soubory; doporučujeme komprimovat na <200 KB) -->
+            <!--
+              Až vytvoříte WebP varianty (cwebp -q 75 posouzeni_desktop.png -o posouzeni_desktop.webp),
+              odkomentujte následující dva zdroje. Bez existujících WebP souborů by jinak došlo
+              k 404 a obrázek by se vůbec nezobrazil (browser nedělá fallback uvnitř <picture>).
+              <source media="(max-width: 768px)" type="image/webp" srcset="posouzeni_mobil.webp">
+              <source type="image/webp" srcset="posouzeni_desktop.webp">
+            -->
             <source media="(max-width: 768px)" srcset="posouzeni_mobil.png">
             <img src="posouzeni_desktop.png"
                  alt="Posouzení nemovitosti online — tým odhadců PTF Reality"
