@@ -1,31 +1,95 @@
+# https://posouzeni.cz/robots.txt
+
+# ===== Standard search engines =====
 User-agent: *
 Allow: /
 Disallow: /index-a.html
+Disallow: /404.html
 Crawl-delay: 1
 
 Sitemap: https://posouzeni.cz/sitemap.xml
 
-# AI Crawlers
+# ===== AI Search bots (povoleno - inference / citation) =====
+# Tito boti odpovídají uživatelům v reálném čase a citují zdroje.
+# Povolením získáme viditelnost v AI search (ChatGPT, Claude, Perplexity, Gemini).
+
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
+User-agent: OAI-SearchBot
+Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# ===== Training-only scrapers (blokováno) =====
+# Tito boti scrapují obsah primárně pro tréninkové datasety bez recipročního benefitu.
+
+User-agent: CCBot
 Disallow: /
 
 User-agent: Bytespider
 Disallow: /
 
-User-agent: FacebookBot
-Allow: /
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

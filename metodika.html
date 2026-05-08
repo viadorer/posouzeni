@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodika odhadu nemovitosti | Jak posouzeni.cz funguje</title>
+  <meta name="description" content="Detailní popis metodiky online odhadu nemovitostí na posouzeni.cz. Zdroje dat, srovnávací modely, omezení přesnosti a transparentní vysvětlení postupu.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://posouzeni.cz/metodika.html">
+  <meta name="theme-color" content="#C4943A">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:title" content="Metodika odhadu nemovitosti — jak posouzeni.cz funguje">
+  <meta property="og:description" content="Transparentní popis zdrojů dat, srovnávacího modelu a limitů online odhadu.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://posouzeni.cz/metodika.html">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:image" content="https://posouzeni.cz/og-image.svg">
+
+  <link rel="icon" type="image/svg+xml" href="/apple-touch-icon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Metodika odhadu nemovitosti — jak posouzeni.cz funguje",
+    "description": "Transparentní popis zdrojů dat, srovnávacího modelu a limitů online odhadu nemovitostí.",
+    "author": { "@type": "Organization", "name": "PTF Reality s.r.o.", "@id": "https://posouzeni.cz/#organization" },
+    "publisher": { "@id": "https://posouzeni.cz/#organization" },
+    "datePublished": "2026-05-08",
+    "dateModified": "2026-05-08",
+    "mainEntityOfPage": "https://posouzeni.cz/metodika.html",
+    "image": "https://posouzeni.cz/og-image.svg",
+    "inLanguage": "cs-CZ"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Domů", "item": "https://posouzeni.cz/" },
+      { "@type": "ListItem", "position": 2, "name": "Metodika", "item": "https://posouzeni.cz/metodika.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Přeskočit na obsah</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo">posouzeni.cz</a>
+      <nav class="header__nav" aria-label="Hlavní navigace">
+        <a href="/" class="header__link">Domů</a>
+        <a href="/metodika.html" class="header__link header__link--active" aria-current="page">Metodika</a>
+        <a href="/tym.html" class="header__link">Tým</a>
+        <a href="/#realvisor-form" class="btn btn--primary btn--small header__cta">ZJISTIT HODNOTU</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="content-page">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Drobečková navigace">
+          <a href="/">Domů</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Metodika</span>
+        </nav>
+
+        <header class="content-page__header">
+          <span class="section-label">METODIKA</span>
+          <h1 class="content-page__title">Jak vznikne odhad — transparentně</h1>
+          <p class="content-page__lead">Online odhad není kouzlo. Je to statistický model, který srovnává vaši nemovitost se stovkami realizovaných transakcí ve vašem okolí. Tady je přesně, jak to funguje, odkud bereme data a kde jsou hranice.</p>
+        </header>
+
+        <aside class="tldr">
+          <h2 class="tldr__title">TL;DR</h2>
+          <ul class="tldr__list">
+            <li>Pracujeme s <strong>realizovanými cenami z katastru nemovitostí</strong>, ne s inzertními cenami.</li>
+            <li>Odhad vychází z <strong>srovnávací metody</strong> — najdeme prodané nemovitosti podobných parametrů ve vašem okolí.</li>
+            <li>Vrácíme <strong>cenové rozmezí</strong> (typicky ±5–10 % u standardních bytů ve velkých městech), ne jedno absolutní číslo.</li>
+            <li>U atypických nemovitostí, novostaveb a malých obcí je odchylka <strong>vyšší</strong>.</li>
+            <li>Online odhad <strong>nenahrazuje znalecký posudek</strong> pro úřední účely.</li>
+          </ul>
+        </aside>
+
+        <h2 id="zdroje-dat">1. Zdroje dat</h2>
+        <h3>1.1. Katastr nemovitostí ČR</h3>
+        <p>Hlavní zdroj. Obsahuje <strong>realizované převody</strong> nemovitostí — tedy ceny, za které se nemovitosti skutečně prodaly, ne jen nabídly. Data jsou veřejná a aktualizovaná průběžně po zápisu vlastnického práva.</p>
+        <p>Proč nepoužíváme inzertní ceny: nabídková cena na realitních portálech bývá průměrně o <strong>5–15 % vyšší</strong> než cena, za kterou se nemovitost skutečně prodá. Práce s inzercí by odhady systematicky nadhodnocovala.</p>
+
+        <h3>1.2. RÚIAN — Registr územní identifikace</h3>
+        <p>Veřejný registr adres, parcel a územních prvků. Slouží k validaci adres a propojení dat na geografickou polohu.</p>
+
+        <h3>1.3. Vlastní transakční databáze</h3>
+        <p>Realizace, u kterých byla provozovatelem zpracována obchodní část (právní servis, zprostředkování). Databáze obsahuje detailnější informace, než je v katastru veřejně dostupné — typicky stav nemovitosti, vybavení, kontext transakce.</p>
+
+        <h3>1.4. Veřejně dostupná data o nemovitostech</h3>
+        <p>Zájmově relevantní zdroje: územní plány, studie tržních zpráv (Trigema, Deloitte, ČSÚ), srovnávací indexy bydlení.</p>
+
+        <h2 id="postup">2. Postup výpočtu</h2>
+        <ol class="numbered-steps">
+          <li>
+            <h3>Geokódování adresy</h3>
+            <p>Z adresy vytvoříme geografické souřadnice. Validujeme proti RÚIAN, abychom pracovali s reálnou parcelou.</p>
+          </li>
+          <li>
+            <h3>Sběr srovnávacích transakcí</h3>
+            <p>Z katastru a vlastní databáze vyhledáme realizované prodeje v okruhu 0,5–5 km (záleží na hustotě transakcí v dané lokalitě) za posledních 12–24 měsíců.</p>
+          </li>
+          <li>
+            <h3>Parametrické srovnání</h3>
+            <p>Filtrujeme srovnatelné nemovitosti dle: typu (byt/dům/pozemek), výměry (±20 %), dispozice, stáří, stavu. Cílíme na vzorek 10–50 srovnatelných transakcí.</p>
+          </li>
+          <li>
+            <h3>Časová a tržní úprava</h3>
+            <p>Starší transakce upravujeme indexem cenového vývoje, aby reflektovaly aktuální tržní situaci. Index zohledňuje sezónní vlivy a regionální trendy.</p>
+          </li>
+          <li>
+            <h3>Statistické zpracování</h3>
+            <p>Spočítáme medián a rozptyl cen za m². Odlehlé hodnoty filtrujeme. Výsledné rozmezí ceny počítáme jako 25.–75. percentil upravené distribuce.</p>
+          </li>
+          <li>
+            <h3>Výsledek</h3>
+            <p>Vrátíme cenové rozmezí (Kč od–do), počet srovnávacích transakcí a indikátor spolehlivosti odhadu (vysoká / střední / nízká).</p>
+          </li>
+        </ol>
+
+        <h2 id="presnost">3. Přesnost a její limity</h2>
+        <h3>3.1. Kde funguje nejlépe</h3>
+        <ul>
+          <li>Standardní byty ve velkých městech (Praha, Brno, Ostrava, Plzeň, Liberec, Hradec Králové, České Budějovice)</li>
+          <li>Bytové jednotky v panelových domech (vysoká srovnatelnost)</li>
+          <li>Rodinné domy v zavedené zástavbě s dostatkem srovnatelných transakcí</li>
+        </ul>
+        <p>Typická odchylka: <strong>±5–10 %</strong> od skutečně realizované ceny.</p>
+
+        <h3>3.2. Kde je odchylka vyšší</h3>
+        <ul>
+          <li>Atypické nemovitosti (vily, památky, lofty, ateliéry)</li>
+          <li>Lokality s nízkým objemem transakcí (malé obce, rekreační oblasti mimo sezónu)</li>
+          <li>Novostavby — nejsou ještě v katastru, srovnávací data chybí</li>
+          <li>Komerční a průmyslové objekty (zatím nepokrýváme)</li>
+          <li>Nemovitosti se závadami nebo věcnými břemeny</li>
+        </ul>
+        <p>Typická odchylka: <strong>±10–20 % nebo více</strong>. V těchto případech doporučujeme odhad doplnit znaleckým posudkem.</p>
+
+        <h3>3.3. Co odhad <em>nezná</em></h3>
+        <p>Žádný online odhad nedokáže nahradit fyzickou prohlídku. Algoritmus nevidí:</p>
+        <ul>
+          <li>Stav stavebních prvků (rozvody, střecha, izolace)</li>
+          <li>Vlhkost, plísně, statické problémy</li>
+          <li>Skutečnou kvalitu rekonstrukce (rozdíl mezi „zrekonstruováno" a „zrekonstruováno dobře")</li>
+          <li>Sousedské vztahy a problémy SVJ</li>
+          <li>Hluk, výhled, denní osvětlení</li>
+        </ul>
+        <p>Tyto faktory mohou cenu posunout o desítky procent. Online odhad je proto vždy <strong>výchozí bod, ne verdikt</strong>.</p>
+
+        <h2 id="rozdil">4. Online odhad vs. znalecký posudek</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr><th></th><th>Online odhad (posouzeni.cz)</th><th>Znalecký posudek</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Účel</strong></td>
+              <td>Orientační, pro vlastní rozhodování</td>
+              <td>Úřední (banka, soud, dědictví, daň)</td>
+            </tr>
+            <tr>
+              <td><strong>Forma</strong></td>
+              <td>Cenové rozmezí + vysvětlení</td>
+              <td>Detailní dokument se závěrem znalce</td>
+            </tr>
+            <tr>
+              <td><strong>Fyzická prohlídka</strong></td>
+              <td>Ne</td>
+              <td>Ano, povinně</td>
+            </tr>
+            <tr>
+              <td><strong>Doba zpracování</strong></td>
+              <td>2 minuty</td>
+              <td>1–4 týdny</td>
+            </tr>
+            <tr>
+              <td><strong>Cena</strong></td>
+              <td>Zdarma</td>
+              <td>3 000 – 15 000 Kč (dle typu)</td>
+            </tr>
+            <tr>
+              <td><strong>Právní platnost</strong></td>
+              <td>Žádná (orientační)</td>
+              <td>Pro úřední řízení</td>
+            </tr>
+            <tr>
+              <td><strong>Zákonný rámec</strong></td>
+              <td>—</td>
+              <td>Zákon č. 254/2019 Sb.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="aktualizace">5. Aktualizace metodiky</h2>
+        <p>Metodiku průběžně vylepšujeme. Změny zaznamenáváme tady:</p>
+        <ul class="changelog">
+          <li><strong>2026-05-08:</strong> Veřejné zveřejnění metodiky.</li>
+        </ul>
+
+        <h2 id="dotazy">6. Máte otázku k metodice?</h2>
+        <p>Pokud chcete vědět víc o tom, jak konkrétní odhad vznikl, nebo máte nemovitost, kde standardní postup nefunguje, ozvěte se na <a href="mailto:kontakt@posouzeni.cz">kontakt@posouzeni.cz</a>. Komplexní případy řešíme individuálně.</p>
+
+        <div class="content-page__cta">
+          <a href="/#realvisor-form" class="btn btn--primary">Zjistit hodnotu mé nemovitosti</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom footer__bottom--simple">
+        <p class="footer__copy">&copy; 2026 PTF Reality s.r.o. — všechna práva vyhrazena</p>
+        <div class="footer__links-inline">
+          <a href="/privacy.html" class="footer__link">Ochrana osobních údajů</a>
+          <a href="/terms.html" class="footer__link">Obchodní podmínky</a>
+          <a href="/" class="footer__link">Hlavní stránka</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

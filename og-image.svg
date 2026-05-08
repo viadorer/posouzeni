@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Posouzení nemovitosti online — zjistěte tržní hodnotu zdarma">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDFAF5"/>
+      <stop offset="100%" stop-color="#F5EDE0"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C4943A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C4943A"/>
+      <stop offset="100%" stop-color="#C4943A" stop-opacity="0"/>
+    </linearGradient>
+    <style><![CDATA[
+      .heading { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+      .body { font-family: 'DM Sans', system-ui, sans-serif; }
+    ]]></style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#goldLine)"/>
+  <rect x="0" y="624" width="1200" height="6" fill="url(#goldLine)"/>
+
+  <!-- Brand mark -->
+  <g transform="translate(80, 90)">
+    <text class="body" font-size="22" font-weight="600" letter-spacing="3" fill="#8B7D6B">POSOUZENI.CZ</text>
+  </g>
+
+  <!-- Main heading -->
+  <g transform="translate(80, 200)">
+    <text class="heading" font-size="72" fill="#2C2416" letter-spacing="2">
+      <tspan x="0" dy="0">Posouzení nemovitosti</tspan>
+      <tspan x="0" dy="84" fill="#C4943A">online — zdarma</tspan>
+    </text>
+  </g>
+
+  <!-- Subheading -->
+  <g transform="translate(80, 410)">
+    <text class="body" font-size="28" fill="#4A3F30" font-weight="500">
+      <tspan x="0" dy="0">Tržní hodnota bytu, domu nebo pozemku</tspan>
+      <tspan x="0" dy="42">během 2 minut. Bez registrace.</tspan>
+    </text>
+  </g>
+
+  <!-- House icon -->
+  <g transform="translate(920, 180)" stroke="#C4943A" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 130 L130 30 L230 130 L230 240 L30 240 Z"/>
+    <path d="M105 240 L105 165 L155 165 L155 240"/>
+    <circle cx="170" cy="200" r="4" fill="#C4943A"/>
+  </g>
+
+  <!-- CTA badge -->
+  <g transform="translate(80, 540)">
+    <rect x="0" y="0" width="240" height="50" rx="25" fill="#C4943A"/>
+    <text class="body" x="120" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#FFFFFF" letter-spacing="2">ZJISTIT HODNOTU →</text>
+  </g>
+  <text class="body" x="350" y="572" font-size="18" fill="#8B7D6B" font-weight="500">Bez závazku · Bez poplatku · Výsledek ihned</text>
+</svg>

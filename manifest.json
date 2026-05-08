@@ -1,0 +1,22 @@
+{
+  "name": "Posouzení nemovitosti online",
+  "short_name": "posouzeni.cz",
+  "description": "Bezplatný online odhad tržní hodnoty bytu, domu nebo pozemku za 2 minuty.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "cs",
+  "dir": "ltr",
+  "background_color": "#FDFAF5",
+  "theme_color": "#C4943A",
+  "categories": ["finance", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

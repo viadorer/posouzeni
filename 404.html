@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stránka nenalezena | posouzeni.cz</title>
+  <title>Stránka nenalezena (404) | posouzeni.cz</title>
+  <meta name="description" content="Stránka nebyla nalezena. Vraťte se na hlavní stránku posouzeni.cz a zjistěte hodnotu své nemovitosti.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#C4943A">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+  <link rel="canonical" href="https://posouzeni.cz/404.html">
+  <link rel="icon" type="image/svg+xml" href="/apple-touch-icon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'DM Sans', sans-serif;
-      background: #FDFAF5;
+      font-family: 'DM Sans', -apple-system, system-ui, sans-serif;
+      background: linear-gradient(135deg, #FDFAF5 0%, #F5EDE0 100%);
       color: #4A3F30;
       display: flex;
       align-items: center;
@@ -22,11 +25,21 @@
       min-height: 100vh;
       padding: 24px;
       text-align: center;
+      line-height: 1.6;
     }
-    .error-page { max-width: 480px; }
+    a { color: inherit; text-decoration: none; }
+    .error-page { max-width: 560px; }
+    .error-page__brand {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2C2416;
+      letter-spacing: 0.02em;
+      margin-bottom: 48px;
+    }
     .error-page__code {
       font-family: 'Playfair Display', serif;
-      font-size: 6rem;
+      font-size: clamp(5rem, 16vw, 8rem);
       font-weight: 700;
       color: #C4943A;
       line-height: 1;
@@ -34,40 +47,76 @@
     }
     .error-page__title {
       font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      font-weight: 700;
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 600;
       color: #2C2416;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.02em;
       margin-bottom: 16px;
     }
     .error-page__text {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.7;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
+      color: #4A3F30;
     }
-    .error-page__link {
+    .error-page__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 320px;
+      margin: 0 auto 32px;
+    }
+    .error-page__btn {
       display: inline-block;
-      background: #C4943A;
-      color: #fff;
       padding: 14px 32px;
       border-radius: 16px;
-      text-decoration: none;
       font-weight: 600;
       font-size: 0.9rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      transition: background 200ms ease;
+      transition: background 200ms ease, transform 200ms ease;
     }
-    .error-page__link:hover { background: #A67B2E; }
+    .error-page__btn--primary {
+      background: #C4943A;
+      color: #FFFFFF;
+    }
+    .error-page__btn--primary:hover { background: #A67B2E; }
+    .error-page__btn--secondary {
+      background: transparent;
+      color: #2C2416;
+      border: 2px solid #E8E0D4;
+    }
+    .error-page__btn--secondary:hover { border-color: #C4943A; color: #C4943A; }
+    .error-page__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 24px;
+      font-size: 0.9rem;
+    }
+    .error-page__links a {
+      color: #8B7D6B;
+      transition: color 200ms ease;
+    }
+    .error-page__links a:hover { color: #C4943A; }
   </style>
 </head>
 <body>
-  <div class="error-page">
+  <main class="error-page">
+    <a href="/" class="error-page__brand">posouzeni.cz</a>
     <div class="error-page__code">404</div>
-    <h1 class="error-page__title">Stránka nenalezena</h1>
-    <p class="error-page__text">Omlouváme se, ale tato stránka neexistuje nebo byla přesunuta. Vraťte se na hlavní stránku a zjistěte hodnotu své nemovitosti.</p>
-    <a href="/" class="error-page__link">Zpět na hlavní stránku</a>
-  </div>
+    <h1 class="error-page__title">Tuto stránku jsme nenašli</h1>
+    <p class="error-page__text">Stránka, kterou hledáte, neexistuje nebo byla přesunuta. Možná máte v adrese překlep, nebo odkaz, který vás sem přivedl, je zastaralý.</p>
+    <div class="error-page__actions">
+      <a href="/" class="error-page__btn error-page__btn--primary">Zpět na úvod</a>
+      <a href="/#realvisor-form" class="error-page__btn error-page__btn--secondary">Zjistit hodnotu nemovitosti</a>
+    </div>
+    <nav class="error-page__links" aria-label="Užitečné odkazy">
+      <a href="/metodika.html">Metodika odhadu</a>
+      <a href="/tym.html">Náš tým</a>
+      <a href="/#faq">Časté dotazy</a>
+      <a href="/privacy.html">Ochrana osobních údajů</a>
+    </nav>
+  </main>
 </body>
 </html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180" role="img" aria-label="posouzeni.cz">
+  <defs>
+    <linearGradient id="bgIcon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDFAF5"/>
+      <stop offset="100%" stop-color="#F5EDE0"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#bgIcon)"/>
+  <g transform="translate(40, 40)" stroke="#C4943A" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 70 L50 30 L90 70 L90 100 L10 100 Z"/>
+    <path d="M40 100 L40 75 L60 75 L60 100"/>
+  </g>
+  <text x="90" y="155" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="#2C2416">posouzeni</text>
+</svg>

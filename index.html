@@ -3,71 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Posouzení nemovitosti online | Zjistěte tržní hodnotu zdarma</title>
-  <meta name="description" content="Získejte nezávislé posouzení hodnoty vaší nemovitosti během 2 minut. Bezplatný odhad tržní ceny bytu, domu nebo pozemku na základě aktuálních dat z trhu.">
+  <title>Posouzení nemovitosti zdarma — Online odhad tržní ceny za 2 minuty | posouzeni.cz</title>
+  <meta name="description" content="Bezplatné online posouzení tržní hodnoty bytu, domu nebo pozemku. Výsledek do 2 minut, bez registrace. Vychází z realizovaných cen z katastru, ne z inzertních cen.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://posouzeni.cz">
+  <link rel="canonical" href="https://posouzeni.cz/">
   <meta name="language" content="cs">
   <meta http-equiv="content-language" content="cs">
   <meta name="author" content="PTF Reality s.r.o.">
   <meta name="theme-color" content="#C4943A">
   <meta name="color-scheme" content="light">
-  <meta name="format-detection" content="telephone=no">
 
   <!-- Geo tags -->
   <meta name="geo.region" content="CZ">
   <meta name="geo.placename" content="Česká republika">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Posouzení nemovitosti online | Zjistěte tržní hodnotu zdarma">
-  <meta property="og:description" content="Získejte nezávislé posouzení hodnoty vaší nemovitosti během 2 minut. Bezplatný odhad tržní ceny bytu, domu nebo pozemku.">
+  <meta property="og:title" content="Posouzení nemovitosti zdarma — online odhad za 2 minuty">
+  <meta property="og:description" content="Bezplatné online posouzení tržní hodnoty bytu, domu nebo pozemku. Vychází z realizovaných cen z katastru, ne z inzerce.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://posouzeni.cz">
+  <meta property="og:url" content="https://posouzeni.cz/">
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:site_name" content="posouzeni.cz">
-  <meta property="og:image" content="https://posouzeni.cz/og-image.png">
+  <meta property="og:image" content="https://posouzeni.cz/og-image.svg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Posouzení nemovitosti online – zjistěte tržní hodnotu zdarma">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:alt" content="Posouzení nemovitosti online — zjistěte tržní hodnotu zdarma">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Posouzení nemovitosti online | Zjistěte tržní hodnotu zdarma">
-  <meta name="twitter:description" content="Získejte nezávislé posouzení hodnoty vaší nemovitosti během 2 minut. Bezplatný odhad tržní ceny.">
-  <meta name="twitter:image" content="https://posouzeni.cz/og-image.png">
-  <meta name="twitter:image:alt" content="Posouzení nemovitosti online – zjistěte tržní hodnotu zdarma">
+  <meta name="twitter:title" content="Posouzení nemovitosti zdarma — online odhad za 2 minuty">
+  <meta name="twitter:description" content="Bezplatné online posouzení tržní hodnoty bytu, domu nebo pozemku za 2 minuty.">
+  <meta name="twitter:image" content="https://posouzeni.cz/og-image.svg">
+  <meta name="twitter:image:alt" content="Posouzení nemovitosti online — zjistěte tržní hodnotu zdarma">
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="cs" href="https://posouzeni.cz">
-  <link rel="alternate" hreflang="x-default" href="https://posouzeni.cz">
+  <link rel="alternate" hreflang="cs" href="https://posouzeni.cz/">
+  <link rel="alternate" hreflang="x-default" href="https://posouzeni.cz/">
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/svg+xml" href="/apple-touch-icon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+  <link rel="manifest" href="/manifest.json">
 
-  <!-- Google Fonts: Preconnect + Load -->
+  <!-- Performance: preconnect to widget API & font origins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://realvisor-com-widget.vercel.app">
+  <link rel="preconnect" href="https://api-production-88cf.up.railway.app">
+  <link rel="dns-prefetch" href="https://realvisor-com-widget.vercel.app">
+  <link rel="dns-prefetch" href="https://api-production-88cf.up.railway.app">
+
+  <!-- Preload critical widget script (eager, not lazy) -->
+  <link rel="preload" as="script" href="https://realvisor-com-widget.vercel.app/widget.iife.js">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Organization (with sameAs for entity linking) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://posouzeni.cz/#organization",
+    "name": "PTF Reality s.r.o.",
+    "alternateName": "posouzeni.cz",
+    "url": "https://posouzeni.cz/",
+    "logo": "https://posouzeni.cz/apple-touch-icon.svg",
+    "description": "Realitní kancelář provozující bezplatné online posouzení tržní hodnoty nemovitostí v České republice.",
+    "foundingDate": "TODO_DATE_FROM_ARES",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "TODO_DOPLNIT",
+      "postalCode": "TODO_DOPLNIT",
+      "addressLocality": "TODO_DOPLNIT",
+      "addressCountry": "CZ"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+420000000000",
+      "email": "kontakt@posouzeni.cz",
+      "contactType": "customer service",
+      "areaServed": "CZ",
+      "availableLanguage": ["Czech"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/TODO",
+      "https://www.facebook.com/TODO",
+      "https://www.firmy.cz/detail/TODO",
+      "https://mapy.cz/TODO"
+    ]
+  }
+  </script>
 
   <!-- JSON-LD: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://posouzeni.cz/#website",
     "name": "posouzeni.cz",
-    "url": "https://posouzeni.cz",
-    "description": "Nezávislé posouzení hodnoty nemovitostí online.",
-    "inLanguage": "cs",
-    "publisher": {
-      "@type": "Organization",
-      "name": "PTF Reality s.r.o.",
-      "url": "https://posouzeni.cz",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CZ"
-      }
+    "url": "https://posouzeni.cz/",
+    "description": "Bezplatné online posouzení hodnoty nemovitostí v ČR.",
+    "inLanguage": "cs-CZ",
+    "publisher": { "@id": "https://posouzeni.cz/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://posouzeni.cz/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
     }
+  }
+  </script>
+
+  <!-- JSON-LD: RealEstateAgent (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": "https://posouzeni.cz/#localbusiness",
+    "name": "posouzeni.cz — PTF Reality s.r.o.",
+    "image": "https://posouzeni.cz/og-image.svg",
+    "url": "https://posouzeni.cz/",
+    "telephone": "+420000000000",
+    "email": "kontakt@posouzeni.cz",
+    "priceRange": "Bezplatně",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "TODO_DOPLNIT",
+      "postalCode": "TODO_DOPLNIT",
+      "addressLocality": "TODO_DOPLNIT",
+      "addressCountry": "CZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "TODO",
+      "longitude": "TODO"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }],
+    "areaServed": { "@type": "Country", "name": "Česká republika" },
+    "parentOrganization": { "@id": "https://posouzeni.cz/#organization" }
   }
   </script>
 
@@ -76,24 +158,58 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://posouzeni.cz/#service",
     "name": "Online posouzení hodnoty nemovitosti",
-    "description": "Bezplatný odhad tržní ceny bytu, domu nebo pozemku na základě aktuálních dat z katastru nemovitostí a realizovaných prodejů.",
-    "url": "https://posouzeni.cz",
-    "provider": {
-      "@type": "Organization",
-      "name": "PTF Reality s.r.o."
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "CZ"
-    },
+    "description": "Bezplatný online odhad tržní ceny bytu, rodinného domu, pozemku nebo komerční nemovitosti. Vychází z realizovaných cen z katastru nemovitostí, výsledek do 2 minut, bez registrace.",
+    "url": "https://posouzeni.cz/",
+    "provider": { "@id": "https://posouzeni.cz/#organization" },
+    "areaServed": { "@type": "Country", "name": "Česká republika" },
     "serviceType": "Odhad nemovitosti",
+    "category": "Real Estate Valuation",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Vlastníci nemovitostí, kupující, dědicové, strany v rozvodu"
+    },
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "CZK",
+      "availability": "https://schema.org/InStock",
       "description": "Bezplatné online posouzení hodnoty nemovitosti"
-    }
+    },
+    "termsOfService": "https://posouzeni.cz/terms.html"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domů",
+      "item": "https://posouzeni.cz/"
+    }]
+  }
+  </script>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://posouzeni.cz/#webpage",
+    "url": "https://posouzeni.cz/",
+    "name": "Posouzení nemovitosti zdarma — online odhad za 2 minuty",
+    "description": "Bezplatné online posouzení tržní hodnoty bytu, domu nebo pozemku.",
+    "isPartOf": { "@id": "https://posouzeni.cz/#website" },
+    "about": { "@id": "https://posouzeni.cz/#service" },
+    "primaryImageOfPage": "https://posouzeni.cz/og-image.svg",
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-05-08",
+    "inLanguage": "cs-CZ"
   }
   </script>
 
@@ -116,7 +232,7 @@
         "name": "Opravdu je to zdarma? V čem je háček?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Žádný háček. Online posouzení je bezplatné. Naše firma funguje v realitním sektoru více než 30 let a posouzení je jedna z cest, jak se s majiteli nemovitostí potkat. Pokud se v budoucnu rozhodnete pro prodej nebo budete potřebovat oficiální znalecký posudek, můžeme pomoct — ale to je čistě na vás."
+          "text": "Žádný háček. Online posouzení je bezplatné. Provozovatel působí v realitním sektoru dlouhodobě a posouzení je jedna z cest, jak se s majiteli nemovitostí potkat. Pokud se v budoucnu rozhodnete pro prodej nebo budete potřebovat oficiální znalecký posudek, můžeme pomoct — ale to je čistě na vás."
         }
       },
       {
@@ -198,9 +314,9 @@
       <a href="#hero" class="header__logo scroll-to-top">posouzeni.cz</a>
       <nav class="header__nav" id="header-nav" aria-label="Hlavní navigace">
         <a href="#jak-to-funguje" class="header__link scroll-nav">Jak to funguje</a>
-        <a href="#duvera" class="header__link scroll-nav">Naše data</a>
-        <a href="#pro-koho" class="header__link scroll-nav">Pro koho</a>
-        <a href="#faq" class="header__link scroll-nav">Časté dotazy</a>
+        <a href="/metodika.html" class="header__link">Metodika</a>
+        <a href="/tym.html" class="header__link">Tým</a>
+        <a href="#faq" class="header__link scroll-nav">FAQ</a>
         <!-- TODO: doplnit reálné telefonní číslo do href i textu -->
         <a href="tel:+420000000000" class="header__phone" aria-label="Zavolejte nám">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -224,21 +340,31 @@
     <section class="hero" id="hero">
       <div class="container hero__grid">
         <div class="hero__content animate-on-scroll">
-          <span class="section-label">NEJČASTĚJŠÍ CHYBA PŘI PRODEJI NEMOVITOSTI</span>
-          <h1 class="hero__title">PRODÁVÁTE NEMOVITOST ZA SPRÁVNOU CENU?</h1>
-          <p class="hero__subtitle">Každý třetí majitel v Česku prodává svou nemovitost pod tržní cenou. Ne proto, že by musel — ale proto, že nezná její skutečnou hodnotu. Rozdíl bývá stovky tisíc korun.</p>
+          <span class="section-label">ONLINE ODHAD TRŽNÍ HODNOTY</span>
+          <h1 class="hero__title">Posouzení nemovitosti zdarma — za 2 minuty</h1>
+          <p class="hero__subtitle">Bezplatný online odhad tržní ceny bytu, domu nebo pozemku. Vychází z realizovaných cen z katastru, ne z inzertních cen. Bez registrace, bez závazku.</p>
           <div class="hero__badges hero__badges--warning">
-            <span class="badge--warning">Podhodnocená nemovitost = peníze, které už nikdy neuvidíte</span>
-            <span class="badge--warning">Nadhodnocená nemovitost = měsíce čekání a nakonec sleva</span>
-            <span class="badge--warning">Bez odhadu vyjednáváte naslepo</span>
+            <span class="badge--warning">Realizované ceny z katastru — ne inzerce</span>
+            <span class="badge--warning">Cenové rozmezí s vysvětlením, ne jedno číslo</span>
+            <span class="badge--warning">Vaše údaje nesdílíme s makléři ani třetími stranami</span>
           </div>
-          <p class="hero__social-proof">12 247 majitelů si letos ověřilo hodnotu své nemovitosti, než začali jednat.</p>
-          <a href="#realvisor-form" class="btn btn--primary scroll-to-widget" style="margin-top: 24px;">ZJISTIT, JESTLI PRODÁVÁM ZA SPRÁVNOU CENU</a>
+          <a href="#realvisor-form" class="btn btn--primary scroll-to-widget" style="margin-top: 24px;">ZJISTIT HODNOTU NEMOVITOSTI</a>
+          <p class="hero__social-proof">Bez závazku · Bez poplatku · Výsledek ihned</p>
         </div>
         <div class="hero__image animate-on-scroll" style="--delay: 200ms">
           <picture>
+            <!-- WebP variants (vytvořte z PNG: cwebp -q 75 input.png -o output.webp) -->
+            <source media="(max-width: 768px)" type="image/webp" srcset="posouzeni_mobil.webp">
+            <source type="image/webp" srcset="posouzeni_desktop.webp">
+            <!-- PNG fallbacky (zatím s aktuálními soubory; doporučujeme komprimovat na <200 KB) -->
             <source media="(max-width: 768px)" srcset="posouzeni_mobil.png">
-            <img src="posouzeni_desktop.png" alt="Posouzení nemovitosti - tým odborníků" class="hero__img" width="960" height="720" loading="eager">
+            <img src="posouzeni_desktop.png"
+                 alt="Posouzení nemovitosti online — tým odhadců PTF Reality"
+                 class="hero__img"
+                 width="960" height="720"
+                 loading="eager"
+                 fetchpriority="high"
+                 decoding="async">
           </picture>
         </div>
       </div>
@@ -312,8 +438,8 @@
               <path d="M20 4L6 12V20C6 28.8 12 36.4 20 38C28 36.4 34 28.8 34 20V12L20 4Z" stroke="#C4943A" stroke-width="2.5" fill="none"/>
               <path d="M14 20L18 24L26 16" stroke="#C4943A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <h3 class="trust-card__title">MAKLÉŘ MÁ DŮVOD NADHODNOCOVAT</h3>
-            <p class="trust-card__text">Realitní makléř, který chce získat zakázku, vám řekne vyšší cenu. Vy podepíšete smlouvu. Po třech měsících bez zájemců pak slevíte — a často prodáte hůře, než kdybyste začali reálně. Nezávislý odhad nemá žádný důvod vás klamat.</p>
+            <h3 class="trust-card__title">DATA, NE SUBJEKTIVNÍ ODHAD</h3>
+            <p class="trust-card__text">Posouzení vychází z realizovaných cen z katastru a transakční databáze. Algoritmus nemá zájem na konkrétní výši ceny — vrací rozmezí, které odpovídá srovnatelným prodejům ve vašem okolí. Vy se rozhodujete, ne číslo.</p>
           </div>
           <div class="trust-card animate-on-scroll" style="--delay: 300ms">
             <svg class="trust-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -335,18 +461,18 @@
         </div>
         <div class="counter-strip animate-on-scroll">
           <div class="counter-item">
-            <span class="counter-item__number" data-target="12247">0</span>
-            <span class="counter-item__label">ověřených odhadů letos</span>
+            <span class="counter-item__number-text">Katastr</span>
+            <span class="counter-item__label">realizované ceny, ne inzerce</span>
           </div>
           <div class="counter-strip__divider" aria-hidden="true"></div>
           <div class="counter-item">
-            <span class="counter-item__number" data-target="30">0</span><span class="counter-item__plus">+</span>
-            <span class="counter-item__label">let na českém trhu</span>
+            <span class="counter-item__number-text">5–10 %</span>
+            <span class="counter-item__label">typická odchylka u standardních bytů</span>
           </div>
           <div class="counter-strip__divider" aria-hidden="true"></div>
           <div class="counter-item">
-            <span class="counter-item__number" data-target="93">0</span><span class="counter-item__plus"> %</span>
-            <span class="counter-item__label">přesnost u standardních bytů</span>
+            <span class="counter-item__number-text">2 min</span>
+            <span class="counter-item__label">do výsledku, bez registrace</span>
           </div>
           <div class="counter-strip__divider" aria-hidden="true"></div>
           <div class="counter-item">
@@ -412,7 +538,7 @@
               <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path class="faq-icon-h" d="M12 5V19" stroke="#C4943A" stroke-width="2" stroke-linecap="round"/><path d="M5 12H19" stroke="#C4943A" stroke-width="2" stroke-linecap="round"/></svg>
             </button>
             <div class="faq-item__answer" role="region">
-              <p>Žádný háček. Online posouzení je bezplatné. Naše firma funguje v realitním sektoru více než 30 let a posouzení je jedna z cest, jak se s majiteli nemovitostí potkat. Pokud se v budoucnu rozhodnete pro prodej nebo budete potřebovat oficiální znalecký posudek, můžeme pomoct — ale to je čistě na vás, bez jakéhokoliv tlaku.</p>
+              <p>Žádný háček. Online posouzení je bezplatné. Provozovatel působí v realitním sektoru dlouhodobě a posouzení je jedna z cest, jak se s majiteli nemovitostí potkat. Pokud se v budoucnu rozhodnete pro prodej nebo budete potřebovat oficiální znalecký posudek, můžeme pomoct — ale to je čistě na vás, bez jakéhokoliv tlaku.</p>
             </div>
           </div>
           <div class="faq-item animate-on-scroll" style="--delay: 100ms">
@@ -472,46 +598,158 @@
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="footer__logo">posouzeni.cz</span>
-        <p class="footer__desc">Nezávislé posouzení hodnoty nemovitostí online. Služba provozovaná společností PTF Reality s.r.o. s více než 30 lety zkušeností na českém realitním trhu.</p>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">posouzeni.cz</span>
+          <p class="footer__desc">Bezplatné online posouzení tržní hodnoty nemovitostí v ČR. Provozováno realitní kanceláří PTF Reality s.r.o.</p>
+          <!-- TODO: doplnit reálné údaje z ARES -->
+          <p class="footer__legal-info">
+            <strong>PTF Reality s.r.o.</strong><br>
+            IČO: <span data-todo="ICO">________</span><br>
+            DIČ: <span data-todo="DIC">CZ________</span><br>
+            Sídlo: <span data-todo="ADRESA">________, ________</span><br>
+            Zapsáno v OR: <span data-todo="OR">________</span>
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Služba</h3>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Online posouzení</a></li>
+            <li><a href="/metodika.html" class="footer__link">Metodika</a></li>
+            <li><a href="/tym.html" class="footer__link">Náš tým</a></li>
+            <li><a href="#faq" class="footer__link scroll-nav">Časté dotazy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Právní informace</h3>
+          <ul class="footer__list">
+            <li><a href="/privacy.html" class="footer__link">Ochrana osobních údajů</a></li>
+            <li><a href="/terms.html" class="footer__link">Obchodní podmínky</a></li>
+            <li><a href="#" class="footer__link" id="cookie-settings-link">Nastavení cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col" id="kontakt">
+          <h3 class="footer__heading">Kontakt</h3>
+          <!-- TODO: doplnit reálný telefon a e-mail -->
+          <a href="tel:+420000000000" class="footer__contact-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>+420 ___ ___ ___</span>
+          </a>
+          <a href="mailto:kontakt@posouzeni.cz" class="footer__contact-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>kontakt@posouzeni.cz</span>
+          </a>
+          <p class="footer__hours">Po–Pá 9:00–17:00</p>
+        </div>
       </div>
-      <div class="footer__links">
-        <a href="#" class="footer__link">Ochrana osobních údajů</a>
-        <a href="#" class="footer__link">Obchodní podmínky</a>
-        <a href="#kontakt" class="footer__link scroll-nav">Kontakt</a>
-      </div>
-      <div class="footer__contact" id="kontakt">
-        <span class="footer__contact-label">Kontakt</span>
-        <!-- TODO: doplnit reálný telefon a e-mail -->
-        <a href="tel:+420000000000" class="footer__contact-link">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>+420 ___ ___ ___</span>
-        </a>
-        <a href="mailto:kontakt@posouzeni.cz" class="footer__contact-link">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>kontakt@posouzeni.cz</span>
-        </a>
-        <p class="footer__copy">&copy; 2025 PTF Reality s.r.o. | Všechna práva vyhrazena</p>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 PTF Reality s.r.o. — všechna práva vyhrazena</p>
+        <p class="footer__disclaimer">Online odhad není znalecký posudek a neslouží pro úřední účely (banka, soud, dědictví). Pro takové potřeby kontaktujte certifikovaného znalce.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Widget Script (lazy) -->
+  <!-- ==================== COOKIE BANNER ==================== -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" hidden>
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__content">
+        <h2 class="cookie-banner__title" id="cookie-banner-title">Používáme cookies</h2>
+        <p class="cookie-banner__desc" id="cookie-banner-desc">
+          Pro analýzu návštěvnosti používáme privacy-friendly nástroj bez sledovacích cookies. Marketingové cookies aktivujeme pouze s vaším souhlasem.
+          Více v <a href="/privacy.html">zásadách ochrany osobních údajů</a>.
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost btn--small" id="cookie-reject">Odmítnout vše</button>
+        <button type="button" class="btn btn--secondary btn--small" id="cookie-customize">Nastavit</button>
+        <button type="button" class="btn btn--primary btn--small" id="cookie-accept">Přijmout vše</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== COOKIE CONSENT ==================== -->
   <script>
-    // Lazy load widget
-    window.addEventListener('load', function() {
+    (function() {
+      var KEY = 'posouzeni_consent_v1';
+      var banner = document.getElementById('cookie-banner');
+      if (!banner) return;
+      var saved;
+      try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { saved = null; }
+
+      function setConsent(state) {
+        var payload = { state: state, ts: Date.now() };
+        try { localStorage.setItem(KEY, JSON.stringify(payload)); } catch (e) {}
+        banner.hidden = true;
+        document.dispatchEvent(new CustomEvent('consentchange', { detail: payload }));
+      }
+
+      function showBanner() { banner.hidden = false; }
+
+      if (!saved) showBanner();
+      document.getElementById('cookie-accept').addEventListener('click', function(){ setConsent('all'); });
+      document.getElementById('cookie-reject').addEventListener('click', function(){ setConsent('necessary'); });
+      document.getElementById('cookie-customize').addEventListener('click', function(){
+        // MVP: stejné jako accept-all; rozšířit na granularní preference dle potřeby
+        setConsent('all');
+      });
+      var settingsLink = document.getElementById('cookie-settings-link');
+      if (settingsLink) {
+        settingsLink.addEventListener('click', function(e){ e.preventDefault(); showBanner(); });
+      }
+
+      // Necessary-only analytics — aktivujte odkomentováním po nastavení Plausible:
+      // (function(){var s=document.createElement('script');s.defer=true;s.dataset.domain='posouzeni.cz';s.src='https://plausible.io/js/script.js';document.head.appendChild(s);})();
+
+      document.addEventListener('consentchange', function(ev){
+        if (ev.detail.state === 'all') {
+          // Marketing pixely zde (Meta Pixel, Google Ads, atd.)
+          // window.fbq && fbq('consent', 'grant');
+        }
+      });
+    })();
+  </script>
+
+  <!-- ==================== EVENT TRACKING ==================== -->
+  <script>
+    (function(){
+      window.dataLayer = window.dataLayer || [];
+      function track(event, props) {
+        window.dataLayer.push(Object.assign({ event: event, ts: Date.now() }, props || {}));
+        // Plausible custom event (active po enabled outside this stub):
+        if (window.plausible) window.plausible(event, { props: props });
+      }
+      document.addEventListener('click', function(e){
+        var phone = e.target.closest('a[href^="tel:"]');
+        if (phone) track('phone_click', { source: phone.closest('header') ? 'header' : 'footer' });
+        var mail = e.target.closest('a[href^="mailto:"]');
+        if (mail) track('email_click');
+        var cta = e.target.closest('.scroll-to-widget');
+        if (cta) track('cta_click', { label: cta.textContent.trim().slice(0, 60) });
+      });
+    })();
+  </script>
+
+  <!-- Widget Script (eager — loaded immediately, async non-blocking) -->
+  <script>
+    (function() {
       var s = document.createElement('script');
       s.src = 'https://realvisor-com-widget.vercel.app/widget.iife.js';
+      s.async = true;
       s.onload = function() {
         if (typeof RealvisorWidget !== 'undefined') {
-          RealvisorWidget.createValuoForm(document.getElementById('realvisor-form'), {
+          var mount = document.getElementById('realvisor-form');
+          if (!mount) return;
+          RealvisorWidget.createValuoForm(mount, {
             apiUrl: 'https://api-production-88cf.up.railway.app/api/v1',
             formCode: 'valuo-main',
             primaryColor: '#C4943A',
@@ -519,10 +757,18 @@
             maxWidth: '520px',
             shadow: 'none'
           });
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'widget_loaded' });
         }
       };
-      document.body.appendChild(s);
-    });
+      s.onerror = function() {
+        var mount = document.getElementById('realvisor-form');
+        if (mount) {
+          mount.innerHTML = '<div style="padding:24px;text-align:center;color:#4A3F30;">Formulář se nepodařilo načíst. Zavolejte nám prosím na <a href="tel:+420000000000" style="color:#C4943A;font-weight:600;">+420 ___ ___ ___</a> nebo to zkuste znovu za chvíli.</div>';
+        }
+      };
+      document.head.appendChild(s);
+    })();
   </script>
 
   <!-- Header interactions -->

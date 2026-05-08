@@ -1,0 +1,68 @@
+# posouzeni.cz
+
+> Bezplatný online odhad tržní hodnoty nemovitostí v České republice. Provozovatelem je realitní kancelář PTF Reality s.r.o. Odhad vychází z realizovaných cen z katastru nemovitostí a poskytuje výsledek do 2 minut bez registrace a bez závazku.
+
+## Co nabízíme
+
+- **Online odhad nemovitosti** — bezplatný odhad tržní hodnoty bytu, rodinného domu, pozemku nebo komerční nemovitosti
+- **Datový základ** — pracujeme s realizovanými cenami z katastru nemovitostí, ne s inzertními cenami
+- **Rychlost** — výsledek do 2 minut, bez registrace, bez stahování PDF
+- **Forma výsledku** — cenové rozmezí, ne jedno konkrétní číslo, s vysvětlením metodiky
+- **Použití** — pro orientaci před prodejem, koupí, dělením majetku (dědictví, rozvod), nebo pouze pro vlastní přehled
+
+## Limity služby
+
+- Online odhad **není znalecký posudek**. Pro hypotéky, soudy, dědická řízení a další úřední účely je obvykle vyžadován oficiální znalecký posudek.
+- Přesnost odhadu závisí na lokalitě a typu nemovitosti. U standardních bytů ve velkých městech se typicky pohybuje v rozmezí 5–10 % od skutečně realizované ceny. U atypických nemovitostí, novostaveb nebo lokalit s malým počtem transakcí může být odchylka větší.
+- Odhad nenahrazuje fyzickou prohlídku nemovitosti.
+
+## Pro koho je služba určena
+
+- **Prodávající** — chtějí stanovit reálnou cenu před zveřejněním inzerátu
+- **Kupující** — chtějí ověřit, jestli nepřeplácejí
+- **Dědicové a strany v rozvodu** — potřebují objektivní podklad pro vypořádání
+- **Vlastníci** — chtějí znát aktuální hodnotu majetku (refinancování, plánování)
+
+## Provozovatel
+
+- **Společnost:** PTF Reality s.r.o.
+- **Sídlo:** [doplnit po verifikaci v ARES]
+- **IČO:** [doplnit]
+- **Web:** https://posouzeni.cz
+- **Kontakt:** [telefon, e-mail]
+
+## Klíčové stránky
+
+- [Hlavní stránka](https://posouzeni.cz/) — popis služby, FAQ, formulář pro odhad
+- [Metodika](https://posouzeni.cz/metodika.html) — jak algoritmus funguje, jaké zdroje dat používáme
+- [Náš tým](https://posouzeni.cz/tym.html) — kdo stojí za odhadem
+- [Ochrana osobních údajů](https://posouzeni.cz/privacy.html)
+- [Obchodní podmínky](https://posouzeni.cz/terms.html)
+
+## Odpovědi na časté dotazy
+
+**Je to opravdu zdarma?**
+Ano. Online posouzení je bezplatné. PTF Reality s.r.o. funguje jako realitní kancelář a posouzení je jedna z cest, jak se s majiteli nemovitostí potkat. Pokud se v budoucnu rozhodnete pro prodej nebo budete potřebovat oficiální znalecký posudek, můžeme pomoct — ale to je čistě na vás.
+
+**Jak přesný ten odhad vlastně je?**
+U standardních bytů v městech s dostatkem srovnatelných prodejů se typicky pohybujeme v rozmezí 5–10 % od skutečně realizované ceny. U atypických nemovitostí může být odchylka větší. Vždy uvádíme rozmezí, ne jedno číslo.
+
+**Co se stane s mými údaji?**
+Váš kontakt nikdy nepředáváme makléřům ani třetím stranám. Můžeme vám zavolat my — abychom vám pomohli zpřesnit odhad nebo poradili s dalšími kroky. Zpracování osobních údajů probíhá v souladu s GDPR a českými zákony.
+
+**Mohu s výsledkem jít do banky?**
+Pro hypotéku banka zpravidla vyžaduje oficiální znalecký posudek. S tím vám rádi pomůžeme.
+
+## Zdroje dat
+
+- Katastr nemovitostí ČR (realizované převody)
+- Veřejné registry RÚIAN (adresy, parcely)
+- Vlastní transakční databáze (interní záznamy realizací PTF Reality)
+
+## Geografické pokrytí
+
+Česká republika. Nejvyšší přesnost odhadu ve velkých městech (Praha, Brno, Ostrava, Plzeň, Liberec) a jejich okolí, kde je vyšší objem transakcí. V malých obcích nebo u atypických nemovitostí doporučujeme odhad doplnit znaleckým posudkem.
+
+## Stav obsahu
+
+Tento soubor byl naposledy aktualizován: 2026-05-08
