@@ -201,6 +201,13 @@
         <a href="#duvera" class="header__link scroll-nav">Naše data</a>
         <a href="#pro-koho" class="header__link scroll-nav">Pro koho</a>
         <a href="#faq" class="header__link scroll-nav">Časté dotazy</a>
+        <!-- TODO: doplnit reálné telefonní číslo do href i textu -->
+        <a href="tel:+420000000000" class="header__phone" aria-label="Zavolejte nám">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>+420 ___ ___ ___</span>
+        </a>
         <a href="#realvisor-form" class="btn btn--primary btn--small scroll-to-widget header__cta">ZJISTIT HODNOTU</a>
       </nav>
       <button class="header__hamburger" id="header-hamburger" aria-label="Otevřít menu" aria-expanded="false">
@@ -473,9 +480,24 @@
       <div class="footer__links">
         <a href="#" class="footer__link">Ochrana osobních údajů</a>
         <a href="#" class="footer__link">Obchodní podmínky</a>
-        <a href="#faq" class="footer__link scroll-nav">Kontakt</a>
+        <a href="#kontakt" class="footer__link scroll-nav">Kontakt</a>
       </div>
-      <div class="footer__contact">
+      <div class="footer__contact" id="kontakt">
+        <span class="footer__contact-label">Kontakt</span>
+        <!-- TODO: doplnit reálný telefon a e-mail -->
+        <a href="tel:+420000000000" class="footer__contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>+420 ___ ___ ___</span>
+        </a>
+        <a href="mailto:kontakt@posouzeni.cz" class="footer__contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>kontakt@posouzeni.cz</span>
+        </a>
         <p class="footer__copy">&copy; 2025 PTF Reality s.r.o. | Všechna práva vyhrazena</p>
       </div>
     </div>

@@ -146,8 +146,39 @@ button {
   font-size: 0.8rem;
 }
 
+.header__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-heading);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 200ms ease;
+}
+
+.header__phone:hover,
+.header__phone:focus-visible {
+  color: var(--color-gold);
+}
+
+.header__phone svg {
+  color: var(--color-gold);
+}
+
 .header__cta {
   margin-left: 8px;
+}
+
+@media (max-width: 1024px) {
+  .header__phone span {
+    display: none;
+  }
+  .header__phone {
+    padding: 6px;
+  }
 }
 
 .header__hamburger {
@@ -883,6 +914,39 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 
 .footer__contact {
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.footer__contact-label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.footer__contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--color-gold);
+  transition: color 200ms ease;
+  text-decoration: none;
+}
+
+.footer__contact-link:hover,
+.footer__contact-link:focus-visible {
+  color: #FFFFFF;
+}
+
+.footer__contact-link svg {
+  flex-shrink: 0;
 }
 
 .footer__email {
@@ -901,6 +965,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
   font-size: 0.85rem;
   color: var(--color-light);
   opacity: 0.7;
+  margin-top: 8px;
 }
 
 /* ========================================
@@ -1042,6 +1107,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
 
   .footer__contact {
     text-align: left;
+    align-items: flex-start;
   }
 
   .footer__links {
